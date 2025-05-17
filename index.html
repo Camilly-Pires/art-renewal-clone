@@ -3,51 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Renewal Center | Classical Art Revival</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://upload.wikimedia.org/wikipedia/commons/3/36/Salon_1850-51_-_Ingres_-_Jeanne_d%27Arc.jpg');
-            background-size: cover;
-        }
-    </style>
+    <title>Art Renewal | Arte Clássica Modernizada</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Classic_palette.svg/200px-Classic_palette.svg.png" alt="ARC Logo">
-            <h1>Art Renewal Center</h1>
+    <!-- Cabeçalho Minimalista -->
+    <header class="cabecalho">
+        <div class="container">
+            <h1>Art Renewal</h1>
+            <nav>
+                <a href="#artistas">Artistas</a>
+                <a href="#obras">Obras</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-        <nav class="main-nav">
-            <a href="index.html" class="active">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/artists.html">Artists</a>
-            <a href="pages/galleries.html">Galleries</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
     </header>
 
+    <!-- Destaque Principal -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Reviving Classical Art</h2>
-            <p>Discover the masters of realism and academic painting</p>
-            <a href="pages/galleries.html" class="btn">Explore Collection</a>
+        <div class="container">
+            <h2>Arte que Transcende o Tempo</h2>
+            <p>Explore os maiores mestres em um design contemporâneo</p>
         </div>
     </section>
 
-    <section class="featured">
-        <h2>Featured This Month</h2>
-        <div class="artwork-highlight">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/William-Adolphe_Bouguereau_%281825-1905%29_-_The_Birth_of_Venus_%281879%29.jpg" alt="Birth of Venus">
-            <div class="highlight-text">
-                <h3>Bouguereau's Masterpiece</h3>
-                <p>"The Birth of Venus" (1879) exemplifies perfect anatomical precision and mythological grace.</p>
+    <!-- Seção de Artistas (Resumida) -->
+    <section id="artistas" class="secao">
+        <div class="container">
+            <h2>Grandes Mestres</h2>
+            <div class="artistas-grid">
+                <!-- Artista 1 -->
+                <div class="artista-card">
+                    <img src="imagens/artistas/da-vinci.jpg" alt="Leonardo da Vinci" loading="lazy">
+                    <h3>Da Vinci</h3>
+                    <p>Renascimento Italiano</p>
+                    <button class="btn-ver-mais">Ver obras</button>
+                </div>
+                <!-- Mais artistas... -->
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Seção de Obras (Texto Resumido) -->
+    <section id="obras" class="secao">
+        <div class="container">
+            <h2>Obras Icônicas</h2>
+            <div class="obras-grid">
+                <!-- Obra 1 -->
+                <div class="obra-card">
+                    <img src="imagens/obras/mona-lisa.jpg" alt="Mona Lisa" loading="lazy">
+                    <div class="obra-info">
+                        <h3>Mona Lisa</h3>
+                        <p><strong>Artista:</strong> Leonardo da Vinci</p>
+                        <p><strong>Ano:</strong> 1503–1506</p>
+                        <p class="resumo">Retrato enigmático de Lisa Gherardini, símbolo do Renascimento...</p>
+                    </div>
+                </div>
+                <!-- Mais obras... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre (Simplificada) -->
+    <section id="sobre" class="secao-destaque">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p class="centralizado">O Art Renewal moderniza a arte clássica para o público contemporâneo, preservando sua essência.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé com Contato -->
+    <footer id="contato">
+        <div class="container">
+            <p>© 2024 Art Renewal | contato@artrenewal.com</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
-                </html>
+            </html>
