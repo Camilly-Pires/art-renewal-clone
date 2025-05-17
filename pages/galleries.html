@@ -1,41 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Galleries | Art Renewal Center</title>
-    <link rel="stylesheet" href="../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleries - Art Renewal Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <!-- Mesmo header do index.html -->
+    <header>
+        <div class="logo-container">
+            <img src="https://www.artrenewal.org/Images/logo.png" alt="Art Renewal Center Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artistas.html">Artists</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="gallery-container">
-        <h1>Masterpieces Collection</h1>
+    <main class="galleries-page">
+        <h1>Art Galleries</h1>
         
-        <!-- Obra 1 -->
-        <div class="artwork-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/William-Adolphe_Bouguereau_%281825-1905%29_-_The_Birth_of_Venus_%281879%29.jpg" 
-                 alt="The Birth of Venus">
-            <div class="artwork-info">
-                <h2>The Birth of Venus</h2>
-                <p><strong>Artist:</strong> William-Adolphe Bouguereau</p>
-                <p><strong>Year:</strong> 1879</p>
-                <p>Venus emerges from the sea on a scallop shell, embodying idealized beauty. Oil on canvas, 300 × 218 cm.</p>
-            </div>
-        </div>
+        <section class="gallery-intro">
+            <p>Explore our curated collections of representational art from different periods and styles.</p>
+        </section>
 
-        <!-- Obra 2 -->
-        <div class="artwork-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project.jpg" 
-                 alt="The Lady of Shalott">
-            <div class="artwork-info">
-                <h2>The Lady of Shalott</h2>
-                <p><strong>Artist:</strong> John William Waterhouse</p>
-                <p><strong>Year:</strong> 1888</p>
-                <p>Pre-Raphaelite depiction of Tennyson's tragic heroine. Oil on canvas, 153 × 200 cm.</p>
+        <section class="gallery-categories">
+            <div class="gallery-category">
+                <img src="https://www.artrenewal.org/Galleries/1/thumbnail.jpg" alt="19th Century European Art">
+                <h2>19th Century European Art</h2>
+                <p>Masterpieces from the Academic, Realist, and Pre-Raphaelite movements.</p>
+                <a href="#" class="explore-btn">Explore Gallery</a>
+            </div>
+            
+            <div class="gallery-category">
+                <img src="https://www.artrenewal.org/Galleries/2/thumbnail.jpg" alt="American Golden Age">
+                <h2>American Golden Age</h2>
+                <p>Works by American artists from the late 19th and early 20th centuries.</p>
+                <a href="#" class="explore-btn">Explore Gallery</a>
+            </div>
+            
+            <div class="gallery-category">
+                <img src="https://www.artrenewal.org/Galleries/3/thumbnail.jpg" alt="Contemporary Realism">
+                <h2>Contemporary Realism</h2>
+                <p>Modern artists continuing the tradition of representational art.</p>
+                <a href="#" class="explore-btn">Explore Gallery</a>
+            </div>
+            
+            <div class="gallery-category">
+                <img src="https://www.artrenewal.org/Galleries/4/thumbnail.jpg" alt="ARC Salon Winners">
+                <h2>ARC Salon Winners</h2>
+                <p>Outstanding works from our annual international competition.</p>
+                <a href="#" class="explore-btn">Explore Gallery</a>
+            </div>
+        </section>
+
+        <section class="featured-exhibitions">
+            <h2>Current Exhibitions</h2>
+            <div class="exhibition">
+                <h3>Bouguereau & America</h3>
+                <p>Exploring the influence of William-Adolphe Bouguereau on American art and collectors.</p>
+            </div>
+            <div class="exhibition">
+                <h3>Modern Masters of Realism</h3>
+                <p>Showcasing contemporary artists who have achieved mastery in traditional techniques.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Art Renewal Center. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-    </main>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-</html>
+                                </html>
