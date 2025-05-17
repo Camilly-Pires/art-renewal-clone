@@ -3,82 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Renewal Center | Modern</title>
-    <meta name="description" content="Reviving classical art in the modern age">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Art Renewal Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <a href="/" class="logo">ARC</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Artists</a></li>
-                    <li><a href="#">Artworks</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-btn">☰</button>
+    <header>
+        <div class="logo-container">
+            <img src="https://www.artrenewal.org/Images/logo.png" alt="Art Renewal Center Logo">
         </div>
-    </div>
-
-    <!-- Hero Banner -->
-    <header class="hero">
-        <div class="container">
-            <h1>Reviving Classical Art</h1>
-            <p>Discover masterpieces from Renaissance to Modernism</p>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artistas.html">Artists</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Featured Artists Section -->
-        <section class="featured-artists">
-            <h2>Featured Artists</h2>
-            <div class="artist-grid">
-                <!-- Artist cards will be loaded via JS -->
+    <main>
+        <section class="hero">
+            <h1>Reviving Excellence in Art</h1>
+            <p>Dedicated to the renewal of traditional art forms and techniques</p>
+        </section>
+
+        <section class="featured-artworks">
+            <h2>Featured Artworks</h2>
+            <div class="art-grid">
+                <div class="art-item">
+                    <img src="https://www.artrenewal.org/Artworks/1000/1000/1019.jpg" alt="The Roses of Heliogabalus">
+                    <div class="art-info">
+                        <h3>The Roses of Heliogabalus</h3>
+                        <p class="artist">Lawrence Alma-Tadema</p>
+                        <p class="art-desc">A masterpiece depicting Emperor Elagabalus hosting a banquet where guests were smothered in rose petals.</p>
+                    </div>
+                </div>
+                <div class="art-item">
+                    <img src="https://www.artrenewal.org/Artworks/1000/1000/1020.jpg" alt="The Birth of Venus">
+                    <div class="art-info">
+                        <h3>The Birth of Venus</h3>
+                        <p class="artist">William-Adolphe Bouguereau</p>
+                        <p class="art-desc">Venus emerges from the sea as a fully grown woman, standing on a seashell.</p>
+                    </div>
+                </div>
+                <div class="art-item">
+                    <img src="https://www.artrenewal.org/Artworks/1000/1000/1021.jpg" alt="The Lady of Shalott">
+                    <div class="art-info">
+                        <h3>The Lady of Shalott</h3>
+                        <p class="artist">John William Waterhouse</p>
+                        <p class="art-desc">Inspired by Tennyson's poem, depicting the tragic heroine in her boat.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Artwork Showcase -->
-        <section class="artwork-showcase">
-            <h2>Masterpiece Collection</h2>
-            <div class="artwork-filters">
-                <button class="filter-btn active" data-period="all">All</button>
-                <button class="filter-btn" data-period="renaissance">Renaissance</button>
-                <button class="filter-btn" data-period="baroque">Baroque</button>
-            </div>
-            <div class="artwork-grid">
-                <!-- Artwork cards will be loaded via JS -->
-            </div>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>The Art Renewal Center is dedicated to promoting a return of skill-based training, standards and excellence in the visual arts.</p>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Art Renewal Center</h3>
-                    <p>Dedicated to the renewal of classical art traditions.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Exhibitions</a></li>
-                        <li><a href="#">Education</a></li>
-                    </ul>
-                </div>
+        <div class="footer-content">
+            <p>&copy; 2023 Art Renewal Center. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-                </html>
+    </html>
